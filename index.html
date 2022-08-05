@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Porfolio</title>
+    <link rel="stylesheet" href="./scss/style.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+</head>
+<body>
+<!--navbar-->
+    <section class="container-fluid" id="navbar" style="z-index: 1000">
+        <div class="row">
+            <div class="col-12">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <!--Navbar-->
+                            <nav class="navbar navbar-expand-lg">
+                                <div class="container-fluid">
+                                    <a class="navbar-brand" href="#">HNB</a>
+                                    <button class="navbar-toggler" id="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#showNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                        <i class="bi bi-list text-white"></i>
+                                    </button>
+                                    <div class="collapse navbar-collapse">
+                                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">About</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Services</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Contact</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                            <!--Navbar end-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--navbar end-->
+<!--home-->
+    <section class="container-fluid" id="home">
+        <div class="row h-100 w-100">
+            <div class="col-12">
+                <div class="container h-100">
+                    <div class="row h-100 d-flex align-items-lg-center flex-column flex-lg-row justify-content-center">
+                        <!--img side-->
+                        <div class="col-12 col-lg-6"  style="z-index: 90">
+                            <article class="text-center text-lg-end position-relative" id="img-con">
+                                <img src="./assests/Poe_1_Perfect.png" height="400" alt="Is this poe?" id="poe-img" style="z-index: 90">
+                                <svg id="blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="position-absolute" style="bottom: -12%;right:-10%;height: 300px;width: 300px;z-index: -1">
+                                    <path fill="#FF6060" d="M45.8,-71.1C60.6,-61.8,74.6,-51.1,79.2,-37.3C83.8,-23.4,78.9,-6.4,71,6.3C63.1,19,52.1,27.3,43.1,37.1C34.2,46.9,27.3,58.1,17.6,62C7.8,65.9,-4.7,62.4,-20.1,61.2C-35.5,60,-53.8,61.2,-67.1,53.7C-80.5,46.3,-89,30.1,-87.9,14.8C-86.7,-0.6,-76,-15.2,-64.7,-25.2C-53.4,-35.3,-41.5,-40.7,-30.7,-51.9C-19.8,-63.1,-9.9,-80,2.8,-84.3C15.5,-88.7,31,-80.5,45.8,-71.1Z" transform="translate(100 100)" />
+                                </svg>
+                            </article>
+                        </div>
+                        <!--text side-->
+                        <div class="col-12 col-lg-6"  style="z-index: 90">
+                            <article class="text-white" id="home-text-side">
+                                <h4 id="intro" class="text-primary">Hello, I am Htet Nay Bala</h4>
+                                <h2 id="job">Web Designer</h2>
+                                <p id="little-intro">
+                                    I have been a web developer about <span class="exp-year"></span> <span id="year">year</span>. And I am <span id="age"></span> years old.
+                                </p>
+                                <button class="btn btn-primary text-white">About Me...</button>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--home end-->
+<!--about-->
+    <section class="container-fluid" id="about" style="position: relative;">
+    <div class="row h-100">
+        <div class="col-6" id="left-side"></div>
+        <div class="col-6" id="right-side"></div>
+        <div class="container">
+            <div class="row row-cols-3" id="about-card-container" style="position: absolute;left: 20%;top: 10%">
+                <article id="exp-con">
+                    <div class="card" style="background: none;">
+                        <div class="card-body d-flex flex-column justify-content-center" id="experience" style="width: 300px;height: 300px">
+                            <i class="bi bi-clipboard-data-fill text-primary" style="font-size: 50px;margin-bottom: 0.5rem;"></i>
+                            <h4 class="card-title fw-bold">Experience</h4>
+                            <p>
+                                Since 2020, I have been a Front-end Web Developer.
+                            </p>
+                            <a href="#" class="text-primary text-decoration-none">See More <i class="bi bi-arrow-right ms-2" style="height: 50px"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <article id="uni-con">
+                   <div class="card" style="background: none;">
+                       <div class="card-body d-flex flex-column justify-content-center" id="university" style="width: 300px;height: 300px">
+                           <i class="bi bi-award-fill" style="font-size: 50px;margin-bottom: 0.5rem;"></i>
+                           <h4 class="card-title fw-bold">University</h4>
+                           <p>
+                              Studied at <span>MMS IT</span> one stop solutions.
+                           </p>
+                           <a href="#" class="text-white text-decoration-none">See More <i class="bi bi-arrow-right ms-2" style="height: 50px"></i></a>
+                       </div>
+                   </div>
+               </article>
+                <article id="things-con">
+                    <div class="card" style="background: none;">
+                        <div class="card-body d-flex flex-column justify-content-center" id="things" style="width: 300px;height: 300px">
+                            <i class="bi bi-folder-check text-primary" style="font-size: 50px;margin-bottom: 0.5rem;"></i>
+                            <h4 class="card-title fw-bold"><span>Things</span> I can do</h4>
+                            <p>
+                                front-end website with beautiful UI design and fit in every screen size.
+                            </p>
+                            <a href="#" class="text-primary text-decoration-none">See More <i class="bi bi-arrow-right ms-2" style="height: 50px"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+            <!--skills-->
+            <div class="row" id="about-skill-container" style="position: absolute;left: 20%;top: 70%;width: 978px">
+                <div class="col-12 col-md-4" id="exp-year-exp">
+                    <article class="text-white d-flex flex-column align-items-center">
+                        <h4 class="exp-years text-primary" id="exp-years">
+                        </h4>
+                        <h4 class="text-uppercase">Experience</h4>
+                    </article>
+                </div>
+                <div class="col-12 col-md-8">
+                    <div class="row" id="skill-row">
+                        <div class="col-6">
+                            <div class="mb-2">
+                                <div class="card" style="background:none;">
+                                    <div class="card-body my-skills text-center shadow-sm">
+                                        <div class="card-title my-1 text-uppercase">HTML</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="mb-2">
+                                <div class="card" style="background:none;">
+                                    <div class="card-body my-skills text-center shadow-sm">
+                                        <div class="card-title my-1 text-uppercase">CSS</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="mb-2">
+                                <div class="card" style="background:none;">
+                                    <div class="card-body my-skills text-center shadow-sm">
+                                        <div class="card-title my-1 text-uppercase">Javascript</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="mb-2">
+                                <div class="card" style="background:none;">
+                                    <div class="card-body my-skills text-center shadow-sm">
+                                        <div class="card-title my-1 text-uppercase">See More...</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!--about end-->
+<!--featured projects-->
+    <section class="container-fluid" id="featured-projects">
+    <div class="row">
+        <div class="col-12">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <article class="text-white d-flex justify-content-between align-items-center" style="margin-bottom: 3rem;">
+                            <div>
+                                <h4 class="text-uppercase" id="featured-header">Featured Projects</h4>
+                                <p class="text-white-50">The projects I made in these years</p>
+                            </div>
+                            <div>
+                                <button class="btn btn-primary text-white btn-lg">View All</button>
+                            </div>
+                        </article>
+                        <!--Projects Card-->
+                        <article>
+                            <div class="container-fluid">
+                                <div class="row">
+
+                                    <div class="col-12 col-lg-6">
+                                        <div class="card cardImg shadow-lg" id="img-one-card">
+                                            <div class="card-body">
+                                                <img src="./assests/Poe_2.jpg" id="img-one" class="card-img-top" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="cardImg-footer">
+                                            <h4 class="text-white">One</h4>
+                                            <p class="text-primary mb-0 text-uppercase">Know more <i class="bi bi-arrow-right"></i></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="card cardImg shadow-lg" id="img-two-card">
+                                            <div class="card-body">
+                                                <img src="./assests/Poe_3.jpg" id="img-two" class="card-img-top" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="cardImg-footer">
+                                            <h4 class="text-white">One</h4>
+                                            <p class="text-primary mb-0 text-uppercase">Know more <i class="bi bi-arrow-right"></i></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="card cardImg shadow-lg" id="img-three-card">
+                                            <div class="card-body">
+                                                <img src="./assests/Poe_5.jpg" id="img-three" class="card-img-top" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="cardImg-footer">
+                                            <h4 class="text-white">One</h4>
+                                            <p class="text-primary mb-0 text-uppercase">Know more <i class="bi bi-arrow-right"></i></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="card cardImg shadow-lg" id="img-four-card">
+                                            <div class="card-body">
+                                                <img src="./assests/Poe_4_final.png" id="img-four" class="card-img-top" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="cardImg-footer">
+                                            <h4 class="text-white">One</h4>
+                                            <p class="text-primary mb-0 text-uppercase">Know more <i class="bi bi-arrow-right"></i></p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!--featured projects end-->
+<!--contact-->
+    <section class="container-fluid" id="contact">
+        <div class="row">
+            <div class="col-12">
+                <div class="container">
+                    <div class="row">
+                        <div class="d-flex justify-content-center">
+                            <div class="col-12 col-lg-10">
+                                <article id="contact-header" class="p-4">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-8">
+                                            <h4 id="contact-title">Let's work together on your next project</h4>
+                                            <p class="text-white-50">
+                                                Ready to work with you in your projects
+                                            </p>
+                                        </div>
+                                        <div class="col-12 col-lg-4">
+                                            <div class="justify-content-end h-100 d-flex align-items-center">
+                                                <button class="btn btn-primary btn-lg text-white px-5" style="font-size: 25px;letter-spacing: 2px">Contact</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </article>
+                                <!--go pages-->
+                                <div>
+                                    <ul class="d-flex align-items-center justify-content-between justify-content-lg-around my-4 flex-wrap flex-lg-nowrap">
+                                        <li class="list-unstyled go-page-con">
+                                            <a href="#home" class="text-decoration-none text-primary go-pages text-uppercase">Home</a>
+                                        </li>
+                                        <li class="list-unstyled go-page-con">
+                                            <a href="#about" class="text-decoration-none text-primary go-pages text-uppercase">About</a>
+                                        </li>
+                                        <li class="list-unstyled go-page-con">
+                                            <a href="#featured-projects" class="text-decoration-none text-primary go-pages text-uppercase">Projects</a>
+                                        </li>
+                                        <li class="list-unstyled go-page-con">
+                                            <a href="#contact" class="text-decoration-none text-primary go-pages text-uppercase">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--contact end-->
+<!--social contact-->
+<section class="container-fluid bg-secondary" id="social-end">
+    <div class="row">
+        <div class="col-12">
+            <article class="d-flex align-items-center justify-content-between bg-secondary flex-wrap flex-lg-nowrap" id="social" style="height: 100px">
+                <div>
+                    <h4 style="font-size: 32px;" class="text-primary mb-0">HNB</h4>
+                </div>
+                <div>
+                    <ul class="d-flex align-items-center justify-content-center flex-warp flex-lg-nowrap my-4 ps-0">
+                        <li class="list-unstyled me-4">
+                            <a href="#home" class="text-decoration-none text-white">
+                                <i style="font-size: 25px;" class="bi bi-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="list-unstyled me-4">
+                            <a href="#about" class="text-decoration-none text-white">
+                                <i style="font-size: 25px;" class="bi bi-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="list-unstyled me-4">
+                            <a href="#featured-projects" class="text-decoration-none text-white">
+                                <i style="font-size: 25px;" class="bi bi-github"></i>
+                            </a>
+                        </li>
+                        <li class="list-unstyled me-4">
+                            <a href="#contact" class="text-decoration-none text-white">
+                                <i style="font-size: 25px;" class="bi bi-twitter"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="copy-right">
+                    <p class="text-white">&copy; All Rights Reserved by HNB</p>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<script src="./node_modules/jquery/dist/jquery.js"></script>
+<!--<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="./js/app.js"></script>
+
+
+
+</body>
+</html>

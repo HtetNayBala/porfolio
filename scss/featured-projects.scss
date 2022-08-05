@@ -1,0 +1,48 @@
+#featured-projects{
+  min-height: 100vh;
+  background-color: $bg-color;
+  padding-top: 3rem;
+}
+
+#img-one{
+  height: 300px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 0px !important;
+}
+
+#img-two{
+  height: 300px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 0px !important;
+}
+
+#img-three{
+  height: 300px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 0px !important;
+}
+#img-four{
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0px !important;
+}
+#featured-header{
+  font-size: $header-fs !important;
+}
+
+.cardImg{
+  background-color: $secondary !important;
+  border-radius: 0px !important;
+  .card-body{
+    border-radius: 0px !important;
+  }
+}
+.cardImg-footer{
+  margin-bottom: 3rem !important;
+  margin-top: 1rem !important;
+}
+

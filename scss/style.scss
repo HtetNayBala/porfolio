@@ -1,0 +1,115 @@
+$primary : #FF6060;
+$secondary : #3e3d3d;
+$bg-color : #181819;
+
+$nav-fs : 20px;
+$main-fs : 70px;
+$header-fs : 32px;
+$second-main-fs : 25px;
+
+//$font-family-sans-serif : 'https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap';
+//$font-family-base : 'https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap';
+@font-face {
+  src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+  font-family : open;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: open,sans-serif;
+}
+#navbar{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: $bg-color;
+}
+#home{
+  padding-top: 10rem !important;
+  background-color: $bg-color;
+}
+.navbar-brand{
+  font-size: 32px !important;
+}
+.nav-item{
+  .nav-link{
+    font-size: $nav-fs;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+}
+#intro{
+  font-size: $second-main-fs;
+  margin-bottom: 1rem;
+}
+#little-intro{
+  width: 50%;
+}
+#job{
+  font-size: $main-fs;
+  margin-bottom: 1.6rem;
+}
+#poe-img{
+  width: 350px !important;
+}
+.btn{
+  border-radius: 0px !important;
+}
+@media screen and (max-width: 850px) {
+  #little-intro{
+    width: 100% !important;
+  }
+  #home-text-side{
+    text-align: center !important;
+  }
+  #img-con{
+    margin-bottom: 4rem;
+  }
+  .navbar-toggler{
+    border: 1px solid $primary !important;
+  }
+  .nav-item{
+    background-color: $secondary !important;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    .nav-link{
+      color: $primary !important;
+      letter-spacing: 1px !important;
+    }
+  }
+  #blob{
+    bottom: -13% !important;
+    right: 15% !important;
+  }
+  #home{
+    padding-bottom: 100px !important;
+  }
+
+
+}
+
+@media screen and (max-width: 480px) {
+  #home {
+    height: auto !important;
+    padding: 20px 0;
+  }
+  #blob{
+    bottom: -10% !important;
+    right: -5% !important;
+  }
+
+
+}
+
+@import "about";
+@import "skill";
+@import "featured-projects";
+@import "contact";
+@import "social";
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+

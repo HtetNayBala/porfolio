@@ -1,0 +1,78 @@
+#about{
+  height: 100vh;
+}
+
+#left-side{
+  background: $secondary;
+  height: 100%;
+}
+
+#right-side{
+  background: $bg-color;
+  height: 100%;
+}
+
+#experience{
+  background-color: $bg-color;
+  color: #ffffff;
+}
+
+#university{
+  background-color: $primary;
+  color: #ffffff;
+}
+
+#things{
+  background-color: $secondary;
+  color: #ffffff;
+}
+#experience{
+  box-shadow: 1px 1px 2px $secondary;
+}
+#university{
+  box-shadow: 1px 1px 2px #ff0040;
+}
+#things{
+  box-shadow: 1px 1px 2px #000000;
+}
+
+@media screen and (max-width: 1024px){
+
+  #about-card-container{
+    left: 3% !important;
+  }
+
+}
+
+@media screen and (max-width: 850px){
+
+  #about-card-container{
+    left: 7% !important;
+  }
+  #experience,#university,#things{
+    width: 200px !important;
+  }
+  #about{
+    height: 80vh !important;
+  }
+}
+
+@media screen and(max-width: 480px){
+  #uni-con,#things-con{
+    margin-left: -50px;
+  }
+  #about-card-container{
+    left: 4% !important;
+    width: 400px !important;
+  }
+
+  .for-unicon{
+    margin-left: 90px !important;
+  }
+  .dnone{
+    display: none !important;
+  }
+  #about{
+    height: 100vh !important;
+  }
+}

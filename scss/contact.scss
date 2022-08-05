@@ -1,0 +1,20 @@
+#contact{
+  background-color: $bg-color;
+}
+#contact-header{
+  background-color: $secondary;
+}
+#contact-title{
+  font-size: $main-fs;
+  color: white;
+}
+.go-page-con{
+  margin-right: 40px !important;
+}
+.go-pages{
+  font-size: $nav-fs;
+}
+
+@media screen and(max-width: 1024px){
+
+}

@@ -1,0 +1,35 @@
+#exp-years{
+  font-size: $main-fs;
+}
+
+.my-skills{
+  background-color: #393838;
+  color: $primary;
+}
+
+@media screen and(max-width: 1024px){
+  #about-skill-container{
+    left: 0% !important;
+  }
+}
+
+@media screen and(max-width: 780px){
+  #about-skill-container{
+    left: 7% !important;
+    width: auto !important;
+  }
+}
+
+@media screen and(max-width: 480px){
+  #about-skill-container{
+    left: 4% !important;
+    top: 60% !important;
+    width: 400px !important;
+  }
+  #exp-year-exp{
+    margin-bottom: 10px;
+  }
+  #skill-row{
+    padding: 0 5px;
+  }
+}
