@@ -20,6 +20,12 @@ $second-main-fs : 25px;
   padding: 0;
   font-family: open,sans-serif;
 }
+#home-btn:hover{
+  transform: translateX(10px);
+}
+.active{
+  border-bottom: 2px solid $primary !important;
+}
 #navbar{
   position: absolute;
   top: 0;
@@ -27,6 +33,9 @@ $second-main-fs : 25px;
   width: 100%;
   background-color: $bg-color;
 }
+.nav-fix{
+  position: fixed !important;
+};
 #home{
   padding-top: 10rem !important;
   background-color: $bg-color;
@@ -58,6 +67,9 @@ $second-main-fs : 25px;
 .btn{
   border-radius: 0px !important;
 }
+.pt{
+  padding-top: 100px !important;
+}
 @media screen and (max-width: 850px) {
   #little-intro{
     width: 100% !important;
@@ -72,12 +84,12 @@ $second-main-fs : 25px;
     border: 1px solid $primary !important;
   }
   .nav-item{
-    background-color: $secondary !important;
     margin-bottom: 10px;
     padding: 5px 10px;
     border-radius: 5px;
     .nav-link{
       color: $primary !important;
+      background-color: $secondary !important;
       letter-spacing: 1px !important;
     }
   }
@@ -110,6 +122,8 @@ $second-main-fs : 25px;
 @import "featured-projects";
 @import "contact";
 @import "social";
+@import "animate";
 
 @import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/all-animation/scss/main";
 

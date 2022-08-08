@@ -1,0 +1,38 @@
+ <article id="exp-con" style="width: 300px;height: 300px">
+                                    <div class="card h-100" style="background: none;">
+                                        <div class="card-body d-flex flex-column justify-content-center" id="experience">
+                                            <i class="bi bi-clipboard-data-fill text-primary" style="font-size: 50px;margin-bottom: 0.5rem;"></i>
+                                            <h4 class="card-title fw-bold">Experience</h4>
+                                            <p>
+                                                Since 2020, I have been a Front-end Web Developer.
+                                            </p>
+                                            <a href="#" class="text-primary text-decoration-none">See More <i class="bi bi-arrow-right ms-2" style="height: 50px"></i></a>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article id="uni-con" style="width: 300px;height: 300px">
+                                    <div class="card h-100" style="background: none;">
+                                        <div class="card-body d-flex flex-column justify-content-center" id="university" style="width: 300px;height: 300px">
+                                            <i class="bi bi-award-fill" style="font-size: 50px;margin-bottom: 0.5rem;"></i>
+                                            <h4 class="card-title fw-bold">University</h4>
+                                            <p>
+                                                Studied at <span>MMS IT</span> one stop solutions.
+                                            </p>
+                                            <a href="#" class="text-white text-decoration-none">See More <i class="bi bi-arrow-right ms-2" style="height: 50px"></i></a>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article id="things-con" style="width: 300px;height: 300px">
+                                    <div class="card h-100" style="background: none;">
+                                        <div class="card-body d-flex flex-column justify-content-center" id="things" style="width: 300px;height: 300px">
+                                            <i class="bi bi-folder-check text-primary" style="font-size: 50px;margin-bottom: 0.5rem;"></i>
+                                            <h4 class="card-title fw-bold"><span>Things</span> I can do</h4>
+                                            <p>
+                                                front-end website with beautiful UI design and fit in every screen size.
+                                            </p>
+                                            <a href="#" class="text-primary text-decoration-none">See More <i class="bi bi-arrow-right ms-2" style="height: 50px"></i></a>
+                                        </div>
+                                    </div>
+                                </article>

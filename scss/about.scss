@@ -1,7 +1,17 @@
 #about{
-  height: 100vh;
+  min-height: 100vh;
+  background-image: url("../assests/bg_img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
-
+#about-card-container{
+  margin-top: 6rem;
+}
+#about-skill-container{
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+}
 #left-side{
   background: $secondary;
   height: 100%;
@@ -36,43 +46,50 @@
   box-shadow: 1px 1px 2px #000000;
 }
 
+
+.slick-dots li button::before{
+  color: white !important;
+}
+
 @media screen and (max-width: 1024px){
 
   #about-card-container{
-    left: 3% !important;
+
   }
 
 }
 
 @media screen and (max-width: 850px){
 
-  #about-card-container{
-    left: 7% !important;
+ .center{
+   width: 700px !important;
+ }
+
+  #experience,#things,#university{
+    width: auto !important;
+    margin-right: 10px;
   }
-  #experience,#university,#things{
-    width: 200px !important;
-  }
+
   #about{
-    height: 80vh !important;
+    min-height: 80vh !important;
+  }
+
+  .slick-dots{
+    bottom: -40px !important;
   }
 }
 
 @media screen and(max-width: 480px){
-  #uni-con,#things-con{
-    margin-left: -50px;
-  }
-  #about-card-container{
-    left: 4% !important;
-    width: 400px !important;
-  }
 
-  .for-unicon{
-    margin-left: 90px !important;
+  .center{
+    width: 450px !important;
   }
+  
   .dnone{
     display: none !important;
   }
-  #about{
-    height: 100vh !important;
+
+  #experience,#things,#university{
+    width: auto !important;
   }
 }

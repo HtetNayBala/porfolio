@@ -10,14 +10,12 @@
   object-position: top;
   border-radius: 0px !important;
 }
-
 #img-two{
   height: 300px;
   object-fit: cover;
   object-position: top;
   border-radius: 0px !important;
 }
-
 #img-three{
   height: 300px;
   object-fit: cover;
@@ -33,7 +31,6 @@
 #featured-header{
   font-size: $header-fs !important;
 }
-
 .cardImg{
   background-color: $secondary !important;
   border-radius: 0px !important;
@@ -46,3 +43,6 @@
   margin-top: 1rem !important;
 }
 
+#img-one-card:hover,#img-two-card:hover,#img-three-card:hover,#img-four-card:hover{
+  transform: scale(0.9);
+}

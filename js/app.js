@@ -1,3 +1,81 @@
+let windowHeight = window.innerHeight;
+
+window.addEventListener('scroll',function (){
+    let scrollHeight = window.scrollY;
+
+    if(scrollHeight>windowHeight-200){
+        // console.log('bigger')
+        $('#navbar').addClass('nav-fix');
+        $('#featured-projects').addClass('pt')
+    }else{
+        $('#navbar').removeClass('nav-fix')
+        $('#featured-projects').removeClass('pt')
+    };
+
+    if(scrollHeight==0){
+        setActive('home');
+    }
+});
+
+//write current argument between ""
+function setActive(current){
+    $(`.nav-link`).removeClass('active');
+
+    $(`.nav-link[href='#${current}']`).addClass('active');
+};
+
+//with only js
+function mySelf(){
+    let sectionElements = document.querySelectorAll('section');
+    sectionElements.forEach(function (el){
+        let waypoint = new Waypoint({
+            element : el,
+            handler: function (direction){
+                if(direction=='down'){
+                    setActive(el.getAttribute('id'));
+                }
+            },offset : '40%'
+        });
+        let waypoint2 = new Waypoint({
+            element : el,
+            handler: function (direction){
+                if(direction=='up'){
+                    setActive(el.getAttribute('id'));
+                }
+            },offset : '-5%'
+        })
+    })
+
+}
+
+mySelf();
+
+//with jQuery
+// function scrollBar(){
+//     let sections = $('section');
+//
+//     sections.waypoint(function (direction){
+//         if(direction == 'down'){
+//             let elementId = $(this.element).attr('id');
+//             setActive(elementId);
+//         }
+//     },{
+//         offset : '40%',
+//     });
+//
+//     sections.waypoint(function (direction){
+//         if(direction == 'up'){
+//             let elementId = $(this.element).attr('id');
+//             setActive(elementId);
+//         }
+//     },{
+//         offset : '0%',
+//     })
+// };
+
+
+
+
 let nowYear = new Date().getFullYear();
 
 function calcAge(){
@@ -56,3 +134,7 @@ $('#things-con').on('mouseout',function (){
     $('#exp-con').removeClass('dnone')
     $('#uni-con').removeClass('dnone')
 })
+
+
+
+
